@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sv.arrupe.tienda.MainController">
+
+    <Label text="Tienda de Productos" />
+    <TextField fx:id="txtNombre" promptText="Nombre"/>
+    <TextField fx:id="txtPrecio" promptText="Precio"/>
+    <TextField fx:id="txtStock" promptText="Stock"/>
+
+    <Button text="Agregar" onAction="#agregarProducto"/>
+    <Button text="Eliminar" onAction="#eliminarProducto"/>
+
+    <TableView fx:id="tablaProductos">
+        <columns>
+            <TableColumn fx:id="colId" text="ID"/>
+            <TableColumn fx:id="colNombre" text="Nombre"/>
+            <TableColumn fx:id="colPrecio" text="Precio"/>
+            <TableColumn fx:id="colStock" text="Stock"/>
+        </columns>
+    </TableView>
+
+</VBox>
